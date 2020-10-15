@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1e8fa018-5e69-4771-9c33-62d72b7ca1c8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1itkIPOFeAKsf5QVHH91HkMMMfC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.train">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ToyGAN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="data_loader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToyGAN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_loader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToyGAN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ToyGAN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python.data_loader" />
+      <item itemvalue="Python.model" />
+      <item itemvalue="Python.train" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.data_loader" />
+        <item itemvalue="Python.model" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e8fa018-5e69-4771-9c33-62d72b7ca1c8" name="Default Changelist" comment="" />
+      <created>1602734194177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602734194177</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1890" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602734346894">
+      <screen x="1440" y="-89" width="1920" height="1058" />
+    </state>
+    <state x="1890" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.22.1440.821/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602734346894" />
+    <state x="2167" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602749632679">
+      <screen x="1440" y="-89" width="1920" height="1058" />
+    </state>
+    <state x="2167" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.22.1440.818/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602749632679" />
+    <state width="1739" height="233" key="GridCell.Tab.0.bottom" timestamp="1602771937746">
+      <screen x="1440" y="-89" width="1920" height="1001" />
+    </state>
+    <state width="1739" height="233" key="GridCell.Tab.0.bottom/0.22.1440.818/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602749503778" />
+    <state width="1739" height="233" key="GridCell.Tab.0.bottom/0.22.1440.821/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602749463169" />
+    <state width="1739" height="233" key="GridCell.Tab.0.bottom/0.22.1440.878/1440.-89.1920.1001@1440.-89.1920.1001" timestamp="1602771937746" />
+    <state width="1739" height="233" key="GridCell.Tab.0.center" timestamp="1602771937743">
+      <screen x="1440" y="-89" width="1920" height="1001" />
+    </state>
+    <state width="1739" height="233" key="GridCell.Tab.0.center/0.22.1440.818/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602749503776" />
+    <state width="1739" height="233" key="GridCell.Tab.0.center/0.22.1440.821/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602749463168" />
+    <state width="1739" height="233" key="GridCell.Tab.0.center/0.22.1440.878/1440.-89.1920.1001@1440.-89.1920.1001" timestamp="1602771937743" />
+    <state width="1739" height="233" key="GridCell.Tab.0.left" timestamp="1602771937741">
+      <screen x="1440" y="-89" width="1920" height="1001" />
+    </state>
+    <state width="1739" height="233" key="GridCell.Tab.0.left/0.22.1440.818/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602749503776" />
+    <state width="1739" height="233" key="GridCell.Tab.0.left/0.22.1440.821/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602749463168" />
+    <state width="1739" height="233" key="GridCell.Tab.0.left/0.22.1440.878/1440.-89.1920.1001@1440.-89.1920.1001" timestamp="1602771937741" />
+    <state width="1739" height="233" key="GridCell.Tab.0.right" timestamp="1602771937745">
+      <screen x="1440" y="-89" width="1920" height="1001" />
+    </state>
+    <state width="1739" height="233" key="GridCell.Tab.0.right/0.22.1440.818/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602749503777" />
+    <state width="1739" height="233" key="GridCell.Tab.0.right/0.22.1440.821/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602749463168" />
+    <state width="1739" height="233" key="GridCell.Tab.0.right/0.22.1440.878/1440.-89.1920.1001@1440.-89.1920.1001" timestamp="1602771937745" />
+    <state x="1935" y="112" key="SettingsEditor" timestamp="1602734328527">
+      <screen x="1440" y="-89" width="1920" height="1058" />
+    </state>
+    <state x="1935" y="112" key="SettingsEditor/0.22.1440.821/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602734328527" />
+    <state x="2094" y="181" width="670" height="676" key="search.everywhere.popup" timestamp="1602747251727">
+      <screen x="1440" y="-89" width="1920" height="1058" />
+    </state>
+    <state x="2094" y="181" width="670" height="676" key="search.everywhere.popup/0.22.1440.821/1440.-89.1920.1058@1440.-89.1920.1058" timestamp="1602747251727" />
+  </component>
+</project>
