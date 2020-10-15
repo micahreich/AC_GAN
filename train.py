@@ -2,6 +2,7 @@ import numpy as np
 import pickle
 import tensorflow as tf
 import model
+import matplotlib.pyplot as plt
 
 
 class Train:
@@ -39,7 +40,23 @@ class Train:
         self.y = self.y.reshape(-1, 1)
 
     def generate_samples(self, epoch_no):
-        pass
+        r, c = 5, 5
+
+        noise = self.sample_latent_noise(r * c)
+        imgs, labels = self.sample_training_data(r * c)
+
+        gen_imgs = self.generator.predict([noise, labels])
+        gen_imgs = 0.5 * gen_imgs + 0.5
+
+        fig, axs = plt.subplots(r, c)
+        cnt = 0
+        for i in range(r):
+            for j in range(c):
+                axs[i, j].imshow(gen_imgs[cnt, :, :, :])
+                axs[i, j].axis('off')
+                cnt += 1
+        fig.savefig("training_samples/%d.png" % epoch_no)
+        plt.close()
 
     def sample_training_data(self, batch_size):
         idx = np.random.randint(0, self.x.shape[0], batch_size)
