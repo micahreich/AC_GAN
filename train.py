@@ -19,15 +19,15 @@ class Train:
 
         self.discriminator = ACGAN.build_discriminator()
         self.discriminator.compile(
-            loss=[tf.keras.losses.BinaryCrossentropy(), tf.keras.losses.SparseCategoricalCrossentropy()],
-            optimizer=tf.keras.optimizers.Adam(0.0003),
+            loss=tf.keras.losses.BinaryCrossentropy(),
+            optimizer=tf.keras.optimizers.Adam(0.0002),
             metrics=['accuracy']
         )
 
         self.acgan = ACGAN.build_acgan(generator=self.generator, discriminator=self.discriminator)
         self.acgan.compile(
-            loss=[tf.keras.losses.BinaryCrossentropy(), tf.keras.losses.SparseCategoricalCrossentropy()],
-            optimizer=tf.keras.optimizers.Adam(0.0003)
+            loss=tf.keras.losses.BinaryCrossentropy(),
+            optimizer=tf.keras.optimizers.Adam(0.0002)
         )
 
         print("Loading dataset...")
@@ -63,26 +63,28 @@ class Train:
         return self.x[idx], self.y[idx]
 
     def sample_latent_noise(self, batch_size):
-        return np.random.normal(0, 1, (batch_size, self.latent_shape))
+        return np.random.normal(0, 1, (batch_size, self.latent_shape)), np.random.randint(0, self.n_classes, batch_size)
 
     def train(self, sample_interval=100):
         valid = np.ones((self.batch_size, 1))
         fake = np.zeros((self.batch_size, 1))
 
         for epoch in range(self.epochs):
-            imgs, labels = self.sample_training_data(self.batch_size)
-            noise = self.sample_latent_noise(self.batch_size)
+            real_imgs, real_labels = self.sample_training_data(self.batch_size)
+            noise, fake_labels = self.sample_latent_noise(self.batch_size)
 
-            gen_imgs = self.generator.predict([noise, labels])
+            gen_imgs = self.generator.predict([noise, fake_labels])
 
-            d_loss_real = self.discriminator.train_on_batch(imgs, [valid, labels])
-            d_loss_fake = self.discriminator.train_on_batch(gen_imgs, [fake, labels])
+            d_loss_real = self.discriminator.train_on_batch([real_imgs, real_labels], valid)
+            d_loss_fake = self.discriminator.train_on_batch([gen_imgs, fake_labels], fake)
             d_loss = 0.5 * np.add(d_loss_real, d_loss_fake)
 
-            g_loss = self.acgan.train_on_batch([noise, labels], [valid, labels])
+            noise, fake_labels = self.sample_latent_noise(self.batch_size)
+
+            g_loss = self.acgan.train_on_batch([noise, fake_labels], valid)
 
             if epoch % 50 == 0:
-                print("%d [D loss: %f, acc.: %.2f%%, op_acc: %.2f%%] [G loss: %f]" % (epoch, d_loss[0], 100 * d_loss[3], 100 * d_loss[4], g_loss[0]))
+                print("%d [D loss: %f, acc.: %.2f%%] [G loss: %f]" % (epoch, d_loss[0], 100*d_loss[1], g_loss))
 
             if epoch % sample_interval == 0:
                 self.generate_samples(epoch)
